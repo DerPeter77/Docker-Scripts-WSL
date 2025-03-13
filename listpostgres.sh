@@ -11,12 +11,16 @@ fi
 
 # Container in eine Liste packen und anzeigen
 echo "Gefundene Container:"
-echo "ID Container-ID Name Image Status Ports"
 echo "----------------------------------------"
+echo " ID Container-ID Name Image Status Ports"
+echo " "
 echo "$containers" | nl -w 2 -s '. '
 
 # Benutzer zur Auswahl auffordern
+echo " "
+echo "----------------------------------------"
 echo "Wähle einen Container aus (1, 2, ...):"
+echo ""
 read -r selection
 
 # Überprüfen, ob die Auswahl gültig ist
